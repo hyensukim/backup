@@ -1,0 +1,98 @@
+11/29
+복습
+String 클래스
+ - 문자열 : 문자형의 나열 ex) "abc" final byte[] value(바이트 배열)
+ - 선언방법
+ 1) 생성자 new String("abc");
+ 2) String str = "abc"
+
+논리적 일치
+equals()
+hashCode()
+
+Wrapper 클래스
+ - Wrap : 감싸다
+ - 기본 자료형을 감싼 클래스
+ - 기본 자료형 - Wrapper 클래스
+정수형
+ byte - Byte class
+ short - Short class
+ int - Integer class
+ long - Long class
+문자형
+ char - Character class
+논리형
+ boolean - Boolean class
+실수형
+ float -Float class
+ double - Double class
+
+class Integer{
+ ...
+	final int value;
+ ...
+}
+/*
+deprecated : 중요도가 떨어져 더 이상 사용되지 않고 앞으로는 사라지게 될 (컴퓨터 시스템 기능 등)
+*/
+
+=============================================================
+Class 클래스
+ - 클래스의 정보를 나타내는 클래스.
+ - 클래스 로더 --> 클래스가 로딩 --> 클래스 로딩과 동시에 클래스 정보(Class.class)가 생김.
+ - 모든 클래스의 정적 변수로 Class명. class
+ - Object Class getClass()
+ - 기본적으로 클래스 로더 -> 데이터 영역로딩. Class
+
+동적로딩
+ - 실행중에 동적으로 클래스 -> 데이터 영역
+ - Class -> .forName()
+
+Math 클래스(java.lang.Math) :  수학관련 메서드
+ - static ceil(...) : 올림
+ - static floor(...) : 버림
+ - static round(...) : 반올림
+
+ - abs(...) 절대값 : 음수 -> 양수
+ - random(...) : 난수, 임의 수, 0이상 ~ 1미만
+
+java.util.StringTokenizer : 문자열 쪼개기
+ - delim : 구분자.
+
+============================================================
+형식화 클래스 -> java.text 패키지에 대부분 정의되어 있다.
+locale : 지역화 관련 클래스 ex) 국가와 관련된 클래스 -> 국가 -> 언어, 통화, 숫자 표기법 ...
+
+주문서예시 -> 00001
+
+1. DecimalFormat
+ - 숫자 -> 특정 형식의 문자입력.
+
+2. SimppleDateFormat
+
+3. ChoiceFormat
+
+4. MessageFormat
+
+.format() -> 형식화
+.parse() -> 형식화 문자열을 원래형태로 바꿔주는 메서드, 숫자 -> 숫자, 날짜 -> 날짜
+
+날짜와 시간
+Calendar와 Date
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

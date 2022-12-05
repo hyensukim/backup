@@ -1,0 +1,34 @@
+package day15;
+//ChoiceForamt
+import java.text.*;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+		double[] limits = {60,70,80,90};
+		String[] patterns = {"D","C","B","A"};
+		// D 60 ~ 69, C 70 ~ 79, ... A 90 ~ 100
+		
+		int[] scores = {100,95,92,88,50,62};
+		ChoiceFormat cf = new ChoiceFormat(limits,patterns);
+		
+		for(int score : scores) {
+			String grade = cf.format(score);
+			System.out.println(score + " : " + grade);
+		}
+		
+		String patterns2 = "60#D|70#C|80<B|90#A";// # 포함, < 초과
+		ChoiceFormat cf2 = new ChoiceFormat(patterns2);
+		
+		int[] scores2 = {100,90,98,88,80,50,62};
+		for(int score :scores2) {
+			String grade = cf2.format(score);
+			System.out.println(score + " : " + grade);
+		}
+		
+		
+		
+	}
+
+}

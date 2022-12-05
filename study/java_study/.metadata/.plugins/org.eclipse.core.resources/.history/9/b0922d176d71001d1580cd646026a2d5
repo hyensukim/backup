@@ -1,0 +1,15 @@
+package day16;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Ex09 {
+
+	public static void main(String[] args) {
+		LocalDate ld1 = LocalDate.now().minusYears(1).minusMonths(2).minusDays(20);
+		LocalDate ld2 = LocalDate.now();
+		
+		Period pe = Period.between(ld2,ld1);
+	}
+
+}

@@ -1,0 +1,18 @@
+package day15;
+//MessageFormat - parse
+import java.io.*;
+import java.text.*;
+import java.util.*;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		String pattern = "이름 : {0}, 전화번호 : {1}";
+		
+		MessageFormat mf = new MessageFormat(pattern);
+		Scanner sc = new Scanner();
+		
+		
+	}
+
+}

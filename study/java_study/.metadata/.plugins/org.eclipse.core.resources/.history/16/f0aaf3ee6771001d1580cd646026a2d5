@@ -1,0 +1,26 @@
+package day16;
+
+import java.time.*;
+import java.time.temporal.*;
+import static java.time.temporal.ChronoField.*;
+import static java.time.temporal.ChronoUnit.*;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		LocalDateTime ldt = LocalDateTime.now();
+		int year = ldt.get(YEAR);
+		int month = ldt.get(MONTH_OF_YEAR);
+		int day = ldt.get(DAY_OF_MONTH);
+		
+		
+		int hours = ldt.get(HOUR_OF_DAY);
+		int min = ldt.get(MINUTE_OF_HOUR);
+		int sec = ldt.get(SECOND_OF_MINUTE);
+		
+		System.out.println(year +"-"+ month +"-"+ day + "-"+hours + "-"+min+"-"+sec);
+		
+		
+	}
+
+}

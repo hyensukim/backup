@@ -1,0 +1,9 @@
+package day17.sub01;
+
+public class Book {
+	private String title;//제목
+	private String author;//저자
+	private String publisher;//출판사
+	
+	
+}

@@ -1,0 +1,15 @@
+package day18.sub01;
+
+import java.awt.*;
+import javax.swing.*;
+public class Ex01 extends JFrame{
+
+	public static void main(String[] args) {
+		
+		Ex01 ex01 = new Ex01();
+		ex01.setVisible(true);// 창 실행
+		ex01.setSize(300,400);//창 픽셀 크기 설정
+		ex01.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 창닫히면 실행 종료
+	}
+
+}

@@ -1,0 +1,25 @@
+package day15.sub01;
+
+import java.util.Calendar;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Calendar cal = Calendar.getInstance();//내부 메서드로 객체 생성.
+		
+		//set,get
+//		System.out.println(cal);
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+		
+		// java Calendar에서는 실제 월보다 1적은 수가 출력되므로 달에 +1을 해줘야 한다.
+		System.out.println("year = "+ year + ", month = " + (month+1) + ", day = " + day);
+		
+		int hour = cal.get(Calendar.HOUR_OF_DAY); // Hour 0~11, Hour_of_day : 0~23
+		int min = cal.get(Calendar.MINUTE);
+		int sec = cal.get(Calendar.SECOND);
+	
+	}
+
+}

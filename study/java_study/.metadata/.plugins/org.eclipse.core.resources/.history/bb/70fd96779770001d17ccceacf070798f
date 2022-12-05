@@ -1,0 +1,20 @@
+package day15;
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Date date = new Date();
+		System.out.println(date); // date.toString() 재정의
+		
+		//Date가 출력되는 형식을 다양하게 하기 위한 방법
+		String pattern = "yyyy-MM-dd HH:mm:ss";
+		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+		System.out.println(sdf);
+		
+		
+	}
+
+}

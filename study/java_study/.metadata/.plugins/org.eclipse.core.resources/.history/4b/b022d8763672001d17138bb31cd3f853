@@ -1,0 +1,26 @@
+package day17;
+
+import java.util.*;
+public class Ex04 {
+	//ListIterator
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<String>(10);
+		for(int i =0;i <10;i++) {
+			names.add("이름"+(i+1));
+		}
+
+		ListIterator<String> ir = names.listIterator();//순방향, 역방향 가능.
+		while(ir.hasNext()) {
+			String name = ir.next();
+			System.out.println(name);
+		}
+		while(ir.hasPrevious()) {
+			String pName = ir.previous();
+			System.out.println(pName);
+		}
+		
+		
+		
+	}
+
+}

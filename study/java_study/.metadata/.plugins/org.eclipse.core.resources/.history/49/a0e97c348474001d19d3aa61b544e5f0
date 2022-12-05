@@ -1,0 +1,14 @@
+package day18;
+
+public class Book {
+	//Set - 중복 X, 순서 X
+	private String title;
+	private String author;
+	private
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

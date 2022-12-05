@@ -1,0 +1,14 @@
+package day16;
+
+import java.time.*;
+import static java.time.temporal.ChronoField.*;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		LocalDateTime ldt1 = LocalDateTime.now();
+		System.out.println(ldt1);
+		
+	}
+
+}

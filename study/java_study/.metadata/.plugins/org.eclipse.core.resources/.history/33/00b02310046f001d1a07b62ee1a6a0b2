@@ -1,0 +1,11 @@
+package day13;
+
+import java.lang.*;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		
+		String name = "이름";
+		
+	}
+}

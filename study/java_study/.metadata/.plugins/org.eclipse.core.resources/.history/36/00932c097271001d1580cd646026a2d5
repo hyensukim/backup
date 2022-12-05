@@ -1,0 +1,11 @@
+package day16;
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		String strDate = "2021/11/20 21:30:00";
+		Stirng pattern = "yyyy/MM/dd HH:mm:ss"
+		
+	}
+
+}

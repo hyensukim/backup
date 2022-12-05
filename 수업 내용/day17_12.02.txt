@@ -1,0 +1,94 @@
+12.02
+1.컬렉션 프레임워크
+ 컬렉션(Collection) : 데이터군
+ 프레임워크(Framework) : 표준화된 설계 : 자료구조, 인터페이스
+ 
+Collection
+ - Iterator : 반복자, 반복실행  
+ - List : 순차자료구조
+  -. 순서가 유지되는 자료, 인덱스 번호가 있음.
+  -. 구현 클래스 : ArrayList, LinkedList,Vector,Stack
+  -. 주요 메서드
+	추가 : add()
+	조회 : get(인덱스번호)
+	제거 : remove(인덱스번호)
+	포함 여부 : contains(요소)
+	indexof(Object o) : 파라미터 값을 찾아 인덱스번호를 반환, 없으면 -1값을 반환
+
+ - Set : 집합자료구조
+  -. 중복 허용 X.
+  -. 순서가 유지되지 않는 자료 구조, 인덱스 번호가 없음.
+  -. 구현 클래스 : HashSet, TreeSet
+  -. 주요 메서드
+	추가 : add()
+	조회 : ...
+	제거 : remove()
+	포함여부 : contains(요소)
+Map : Diction자료구조
+  -. 키 - 값의 쌍 구조
+  -. 키(Key) : 중복 허용 X(Set : 집합 자료구조)
+  -. 값(Value) : 중복 허용
+  -. 순서가 유지되지 않는 자료 구조, 인덱스 번호가 없음.
+  -. 구현클래스 : HashMap, TreeMap, Hashtable, Properties
+  -. 주요 메서드
+	추가 : put(키,값)
+	조회 : ...
+	제거 : remove(키)
+	포함여부 : containsKey(), containsValue()
+
+2. 컬렉션 프레임워크의 핵심 인터페이스
+Iterator : 반복자(
+
+3. List 인터페이스
+ - ArrayList : 배열을 구현한 자료구조
+  -. Object[] elementData = new Object[10];(default ArrayList capa.)
+  -. size() : 요소의 갯수
+  -. 기본용량 : 10 -> 배열의 크기를 넘어서게 되면 현재 용량의 2배로 자동 추가된다.
+  -. 물리적 메모리에 순차적으로 등록
+  -. 데이터의 조회는 빠르다
+  -. 데이터 변경 시, 해당 데이터 변경되지 않고 변경된 데이터의 새로운 배열이 생성됨.
+  -. 데이터 추가, 삭제 시 불리
+ - Vector -> capacity() : 내부 용량 조회
+ - Iterator : 반복 작업의 표준화
+  -. iterator() 메서드
+  -. Interface Iterator
+   -> hasNext() : 다음 요소가 있는지?
+   -> next() : 다음 요소를 조회
+   -> 반복이 완료되면 끝이고, 다시 반복되지 않는다.(1회용)
+   -> 다시 반복을 위해서는 다시 Iterator 객체를 생성해야 한다.
+  -. ListIterator : List 인터페이스 구현 클래스에서만 사용 가능.
+    *차이점 : 순방향, 역방향 모두 가능.
+   -> hasNext(), next() hasPrevious() 이전 요소가 있는지, previous() : 인전 요소 조회
+ - LinkedList
+  -. 각 요소가 다음 연결 요소의 주소값을 가지고 있다.
+  -. 데이터 추가, 삭제 시 다음 요소의 주소만 변경하게 되어 유리하다.
+  -. ArrayList와 다르게 새로운 배열을 생성하지 않아 메모리 소비가 적다.
+  -. 데이터가 논리적으로만 연결되어 있어 물리적으로(주소값) 조회시에는 분리되어 있다.
+  -. Queue->LinkedList
+   -> offer() : 뒤에 추가
+   -> poll() : 앞에서 꺼내기
+   -> peek() : 조회만  
+-. Stack->ArrayList,Vector
+   -> push() : 가장 위에 추가
+   -> pop() : 가장 위에 꺼내기(뒤에서부터 꺼내기)
+ - indexOf() : 요소의 인덱스 위치(정수값) 반환. / 정방향
+ - lastIndexOf() : 요소의 인덱스 위치(정수값) 반환. / 역방향
+
+3. Set 인터페이스
+ - 중복 X
+ - 순서 X -> 인덱스번호 X
+ - HashSet
+ - TreeSet
+ - 중복을 체크하는 기준 : equals(), hashCode();
+
+3.Map 인터페이스
+ - 키-값 쌍
+ - HashMap
+ - TreeMap
+ - put("키","값")
+
+
+
+
+
+

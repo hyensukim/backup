@@ -1,0 +1,20 @@
+package day16;
+
+import java.time.*;
+import java.time.temporal.*;
+import static java.time.temporal.ChronoField.*;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		LocalDateTime ldt = LocalDateTime.now();
+		int year = ldt.get(ChronoField.YEAR);
+		int month = ldt.get(ChronoField.MONTH_OF_YEAR);
+		int day = ldt.get(ChronoField.DAY_OF_MONTH);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,111 @@
+11.30
+1.클래스 형식화
+java.text 패키지 - 형식화
+ .format(숫자 -> 형식)
+ .parse(형식 -> 숫자)
+
+ 1) DecimalFormat - 숫자 -> 특정형식의 문자열
+
+ 2) SimpleDateFormat - 숫자를 특정형식의 문자열
+  - 패턴에 사용되는 기호 : y, M, d, H, m, s, E(요일)
+ y - yyyy연도
+ M - MM월
+ d - dd일
+
+ H - 시(0~23) 
+ m - 분(0~59)
+ s - 초(0~59)
+ a(AM/PM) 
+ E(요일)
+
+ 3) ChoiceFormat - 숫자(limits) - 문자(
+ - 학점부여 관련 Format(형식)
+package day15;
+//ChoiceForamt -> 매개변수 2개 생성자
+import java.text.*;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+//		double[] limits = {60,70,80,90};
+//		String[] patterns = {"D","C","B","A"};
+//		// D 60 ~ 69, C 70 ~ 79, ... A 90 ~ 100
+//		
+//		int[] scores = {100,95,92,88,50,62};
+//		ChoiceFormat cf = new ChoiceFormat(limits,patterns);
+//		
+//		for(int score : scores) {
+//			String grade = cf.format(score);
+//			System.out.println(score + " : " + grade);
+//		}
+		String patterns2 = "60#D|70#C|80<B|90#A";// # 포함, < 초과
+		ChoiceFormat cf2 = new ChoiceFormat(patterns2);
+		
+		int[] scores2 = {100,90,98,88,80,50,62};
+		for(int score :scores2) {
+			String grade = cf2.format(score);
+			System.out.println(score + " : " + grade);
+		}
+
+	}
+
+}
+
+ 4) MessageFormat
+ 
+
+format -> 형식화 문자열, parse -> 형식화 문자열 -> 원래 형태
+
+2. 날짜와 시간
+Calendar와 Date
+
+Date 1.0
+Calendar 1.1
+	- 추상클래스, 생성자 protected -> 외부에서 객체 생성이 불가함.
+	- 달력체계가 다른 국가, 내부에서 지역에 맞는 달력 객체 생성자
+	- static getInstance() -> Calendar 객체 생성. : 현재 시간(내부에서 알아서 나라에 맞는 시간으로 생성)
+	- set 메서드 -> 날짜와 시간을 지정할 때 사용.
+	- get 메서드 -> 날짜와 시간을 조회할 때 사용.
+	- add 메서드 + roll 메서드
+	
+3. java.time 패키지 : 클래스 구현만 가능하면 된다. -> 꼭 사용해보기
+
+ - java.time : 핵심클래스
+ Temporal(기준 인터페이스)
+ TemporalAccessor(접근,날짜와 시간 조회와 관련된 인터페이스)
+ TemporalAdjuster(날짜와 시간 변경과 관련된 인터페이스)
+  -. LocalDate - 날짜
+  -. LocalTime - 시간
+  -. LocalDateTime = LocalDate + LocalTime : 날짜와 시간
+  -. ZonedDateTime = LocalDateTime + 시간대 
+  -. OffsetDateTime = LocalDateTime + 시간대
+  -. Instant : EpochTime(TimeStamp) : long 형태의 시간 표기법.
+	-> 1970.1.1 자정 -> 천분의 일초로 카운팅한 수치(UTC+0)
+
+ - TemporalAmount
+  -. Period 클래스 : 날짜의 간격
+  -. Duration 클래스 : 시간의 간격
+
+ - java.time.format : 형식화
+  -. DateTimeFormatter
+	-> format
+  -. 각 핵심 클래스(java.time)
+   * parse : 형식화된 문자열 -> java.time 핵심 클래스로 변환.
+
+ - java.time.temporal : 필드와 단위
+  -. TemporalField : 년, 월,일 같은 필드 
+	-> ChronoField(구현체)
+  -. TemporalUnit : 날짜 시간 관련 단위
+	-> ChronoUnit(구현체)
+ - java.time.zone : 시간대
+  -. ZoneId : Asia/Seoul
+  -. ZoneOffset : +9(Z.D)
+
+ - java. time 패키지 주요 메서드
+  -. java 1.8 version
+	-> static of(...) : 객체 생성
+	-> static now() : 현재 날짜 시간 기준 객체 생성
+	각 핵심 클래스별 변환, 추가
+	 -> to 핵심클래스명 메서드 : 변환
+

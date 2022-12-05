@@ -1,0 +1,14 @@
+package day14;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		Integer num1 = new Integer(10);
+		int num2 = 10;
+		
+		num1 = new Integer(20);
+		
+		
+	}
+
+}

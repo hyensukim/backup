@@ -1,0 +1,9 @@
+package day13.sub02;
+
+public class Ex04 {
+	//StringBuffer 예제
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer(500); //16byte
+	}
+
+}

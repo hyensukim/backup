@@ -1,0 +1,15 @@
+package day13.sub02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer num1 = 10;
+		System.out.println(System.identityHashCode(num1));
+		Integer num2 = 10;
+		System.out.println(System.identityHashCode(num2));
+		int num3 = num1 + num2;
+		System.out.println(num3);
+	}
+
+}

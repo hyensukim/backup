@@ -1,0 +1,16 @@
+package day17;
+
+import java.util.*;
+public class Ex07 {
+
+	public static void main(String[] args) {
+		ArrayList<String> fruits = new ArrayList<String>();
+		fruits.add("사과");
+		fruits.add("귤");
+		fruits.add("배");
+		fruits.add("바나나");
+		
+		System.out.println(fruits);
+	}
+
+}

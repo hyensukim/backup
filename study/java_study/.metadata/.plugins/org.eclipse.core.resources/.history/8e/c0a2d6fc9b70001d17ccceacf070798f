@@ -1,0 +1,14 @@
+package day15;
+//MessageFormat
+import java.text.*;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		String pattern = "이름 : {0}, 전화번호 : {1}";//{숫자 = 순서} 치환
+		String[] names = {"이름1","이름2","이름3"};
+		
+		MessageFormat mf = new MessageFormat(pattern);
+	}
+
+}

@@ -1,0 +1,22 @@
+package day16;
+
+import java.time.*;
+import java.time.temporal.*;
+import static java.time.temporal.ChronoField.*;
+import static java.time.temporal.ChronoUnit.*;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		LocalDateTime ldt = LocalDateTime.now();
+		int year = ldt.get(YEAR);
+		int month = ldt.get(MONTH_OF_YEAR);
+		int day = ldt.get(DAY_OF_MONTH);
+		
+		System.out.println(year + month + day);
+		
+		
+		
+	}
+
+}

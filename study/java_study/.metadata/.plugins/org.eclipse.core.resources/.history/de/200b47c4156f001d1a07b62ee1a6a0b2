@@ -1,0 +1,11 @@
+package day13.sub02;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		String str = "I LOVE";
+		str += " java";
+		System.out.println(str);
+	}
+
+}

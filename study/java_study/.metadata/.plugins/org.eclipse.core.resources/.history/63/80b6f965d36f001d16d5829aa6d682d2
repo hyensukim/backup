@@ -1,0 +1,21 @@
+package day14;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+//		Integer num1 = new Integer(10);
+//		Integer num2 = new Integer(10);
+		
+		//동일한 메모리를 공유하여 불필요한 메모리 낭비를 줄여주기 위해 아래와 같이 생성한다.
+		Integer num1 = Integer.valueOf(10);
+		Integer num2 = Integer.valueOf(10);
+		//다형성
+		Number num3 = num2;
+		Number num4 = Long.valueOf(1L);
+		Number num5 = Float.valueOf(10.23F);
+		
+		System.out.println(System.identityHashCode(num1));
+		System.out.println(System.identityHashCode(num2));
+	}
+
+}

@@ -1,0 +1,18 @@
+package day16;
+
+import java.time.*;
+import static java.time.temporal.ChronoUnit.*;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt);
+		
+		LocalDateTime ldt2 = ldt.plus(100,DAYS);
+		System.out.println(ldt2);
+		
+		
+	}
+
+}

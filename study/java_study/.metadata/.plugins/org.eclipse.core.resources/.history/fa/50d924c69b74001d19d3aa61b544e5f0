@@ -1,0 +1,20 @@
+package day18.sub01;
+
+import java.awt.*;
+import javax.swing.*;
+public class Ex01 extends JFrame{
+	
+	public Ex01() {
+		super("연습1");
+		setVisible(true);// 창 실행
+		setSize(300,400);//창 픽셀 크기 설정
+		setDefaultCloseOperation(EXIT_ON_CLOSE);// 창닫히면 실행 종료
+	}
+	
+	public static void main(String[] args) {
+		
+		Ex01 ex01 = new Ex01();
+
+	}
+
+}

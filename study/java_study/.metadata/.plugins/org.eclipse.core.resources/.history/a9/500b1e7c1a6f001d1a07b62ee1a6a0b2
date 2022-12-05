@@ -1,0 +1,13 @@
+package day13.sub02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer num1 = new Integer(10);
+		System.out.println(num1);
+		Integer num2 = new Integer(10);
+		System.out.println(num2);
+	}
+
+}

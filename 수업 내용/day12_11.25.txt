@@ -1,0 +1,85 @@
+11/25
+복습
+예외는 서비스가 지속되는 것이 중요하다
+예외처리
+
+1. 오류와 예외
+ - 오류 : Error : 시스템 오류 : 통제 불가능한 오류
+ - 예외 : Exception : 코드상에 발생하는 오류(버그) , 통제가능한 오류
+
+2. 예외 클래스의 종류
+Throwable 
+ - Error
+ - Exception 
+  -. Runtime Exception : 컴파일 실행 O, 넘길 수 있는 코드
+  -. Runtime Exception이 아닌 Exception : 컴파일 실행 X, 반드시 수정해야 하는 코드
+
+Throwable
+Exception
+IOException
+FileNotFoundException
+ - 컴파일 시에 체크되는 예외
+  -> 예외발생시 컴파일 X, 실행할 수 있는 class 파일 X 
+
+Throwable
+Exception
+ArithmeticException
+RuntimeException
+ - 실행중에 체크되는 예외
+  -> 컴파일은  O, 실행중에 발생.
+
+
+3. try-catch-finally 문
+ - 구조
+try{
+	//예외가 발생할 수도 있는 구간
+}catch(예외한 예외 객체) {
+	//예외가 발생하면 유입되는 구간 
+	// - 발생 시에 적절한 조치를 하는 구간
+}finally{
+	//예외가 발생하든 발생하지 않든, 항상 실행되는 구간.
+}
+
+★Exception 메서드
+ - trace : 추적, stack : 쌓다 -> 오류 발생시 많이 사용되는 메서드
+ - printStackTrace();, getMessage();
+
+4. try-with-resources
+	- AutoCloseable 인터페이스 : close();
+
+ - resources : 자원, DB에서 가져오거나 와 같은 것들.
+
+try{
+
+}catch(...) {
+
+}finally{
+	// resources 해제
+	// 로그 기록(에러가 발생했던 부분을 기록)
+}
+
+
+5. 예외처리 미루기
+ - 예외전가 : 예외가 발생할 수 있는 메서드를 호출하는 쪽에서 예외 처리 전가.
+ - throws : 전가시킬 예외 클래스.
+ - throws는 Exception(컴파일시 체크되는 예외에서 반드시 써야하는 키워드)
+ - RuntimeException 하위 예외 -> throws 생략 가능: 유연하게 예외 처리
+
+6. 다중예외처리
+
+7. 사용자 정의 예외
+ - 회원 아이디 중복 : DuplicateMemberIDException(개발자가 정의한 예외)
+ - 로그인 기능 : 회원 아이디, 회원 비밀번호
+  1) 아이디가 가입되어 있는 회원인지 확인.
+  -> MemeberNotFoundException
+  2) 비밀번호 일치 확인.
+  -> PasswordCorrectException
+======================================================
+java.lang 패키지
+
+
+
+
+
+
+

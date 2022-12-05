@@ -1,0 +1,12 @@
+package day14.sub01;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Person p1 = new Person("김현수",30);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package day14.sub01;
+// Class 클래스 예제
+import java.lang.reflect.*;
+import java.nio.file.spi.FileSystemProvider;
+public class Ex01 {
+
+	public static void main(String[] args) {
+//		Person person = new Person("이름1",30);
+//		Class cls = person.getClass();
+//		Class cls = Person.class; // 정적변수 이므로,클래스명으로 호출. -> 객체 생성 X
+		
+		//Class file이 없을 수도 있으므로, 예외 핸들링 해줘야함.
+		try {
+			Class cls = Class.forName("day14.sub01.Person");//패키지명을 포함한 클래스명을 문자열 매개변수로 준다.
+			System.out.println(cls);
+			System.out.println(cls.getName());
+		
+			//클래스의 멤버변수 정보
+			Field[] fields = cls.getFields();
+			for(Field field : fields) {
+			System.out.println(field);
+			}
+			System.out.println("------------메서드----------------");
+			Method[] methods = cls.getMethods();
+			for(Method method : methods) {
+			System.out.println(method);
+			}
+			System.out.println("------------생성자----------------");
+			Constructor[] cons = cls.getConstructors();
+			for(Constructor con : cons) {
+			System.out.println(con);
+			}
+		
+			}catch(ClassNotFoundException e) {
+				e.printStackTrace();
+		}
+	}
+}

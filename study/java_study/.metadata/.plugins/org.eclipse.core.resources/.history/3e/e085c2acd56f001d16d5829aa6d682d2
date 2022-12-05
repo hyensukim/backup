@@ -1,0 +1,10 @@
+package day14;
+//Class 클래스
+public class Ex05 extends Object{
+
+	public static void main(String[] args) {
+		Ex05 ex05 = new Ex05();
+		
+	}
+
+}

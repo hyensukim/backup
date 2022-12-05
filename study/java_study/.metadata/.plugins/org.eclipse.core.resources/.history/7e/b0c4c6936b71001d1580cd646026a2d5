@@ -1,0 +1,14 @@
+package day16;
+
+import java.time.*;
+
+public class Ex08 {
+
+	public static void main(String[] args) {
+		Instant now = Instant.now();
+		System.out.println(now);
+		
+		
+	}
+
+}

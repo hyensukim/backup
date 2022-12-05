@@ -1,0 +1,14 @@
+package day16;
+
+import java.time.*;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		LocalDateTime ldt = LocalDateTime.now();
+		ZonedDateTime zdt =ldt.atZone("Asia/Seoul");
+		
+		
+	}
+
+}

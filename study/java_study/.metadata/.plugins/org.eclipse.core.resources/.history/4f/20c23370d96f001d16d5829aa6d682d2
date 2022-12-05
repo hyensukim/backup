@@ -1,0 +1,10 @@
+package day14.sub02;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// java.util.Math
+
+	}
+
+}

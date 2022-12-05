@@ -1,0 +1,10 @@
+package day13.sub02;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		String str1 = "abc";
+		String str2 = "abc";
+	}
+
+}

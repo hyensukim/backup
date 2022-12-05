@@ -1,0 +1,13 @@
+package day13.sub01;
+
+public class Ex06 {
+//가변 매개변수 예제
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void fruits(String... fruits) {
+		System.out.println(java.util.Arrays.toString(fruits));
+	}
+
+}

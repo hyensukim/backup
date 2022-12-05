@@ -1,0 +1,12 @@
+package day14.sub02;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+		double num1 = Math.random();
+		System.out.println((int)(num1*10));
+		
+	}
+
+}

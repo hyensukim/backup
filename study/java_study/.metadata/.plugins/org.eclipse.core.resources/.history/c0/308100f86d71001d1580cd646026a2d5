@@ -1,0 +1,17 @@
+package day16;
+
+import java.time.*;
+
+public class Ex10 {
+
+	public static void main(String[] args) {
+		LocalTime lt1 = LocalTime.now().minusSeconds(3600);
+		LocalTime lt2 = LocalTime.now();
+		
+		Duration du = Duration.between(lt1, lt2);
+		System.out.println(du);
+		
+		
+	}
+
+}
