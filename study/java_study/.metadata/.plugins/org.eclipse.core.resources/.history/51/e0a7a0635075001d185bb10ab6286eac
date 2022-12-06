@@ -1,0 +1,44 @@
+package day19;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Ex02 extends JFrame{
+	
+	public Ex02() {
+		super("연습02");
+		setVisible(true);//창 보이기
+		setSize(300,400);//창 사이즈
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		//FlowLayout -> 흐르듯이 배치 // 가운데 정렬
+		//setLayout
+		//FlowLayout layout = new FlowLayout(FlowLayout.RIGHT);
+		
+//		//add(Component c)
+//		for(int i = 0; i < 6; i++) {
+//			add(new JButton("버튼"+i));
+//		}
+		
+		//BoarderLayout -> 동서남북, 가운데
+		BorderLayout layout = new BorderLayout();
+		setLayout(layout);
+		
+		add("North",new JButton("북"));
+		add("South",new JButton("남"));
+		add("West", new JButton("서"));
+		add("East", new JButton("동"));
+		add("Center", new JButton("가운데"));
+	}
+
+	public static void main(String[] args) {
+		new Ex02();
+		
+		
+		
+		
+		
+		
+	}
+
+}

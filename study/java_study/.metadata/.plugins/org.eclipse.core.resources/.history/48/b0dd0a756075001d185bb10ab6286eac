@@ -1,0 +1,19 @@
+package day19.sub01;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Ex01 extends JFrame{
+
+	public Ex01() {
+		super("¿¹Á¦01");
+		setVisible(true);
+		setSize(300,400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+	}
+	public static void main(String[] args) {
+		new Ex01();
+	}
+
+}

@@ -1,0 +1,18 @@
+package day19;
+
+import java.awt.*;
+import javax.swing.*;
+public class Ex05 extends JFrame{
+
+	public Ex05() {
+		super("¿¬½À05");
+		setSize(600,400);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+	}
+	public static void main(String[] args) {
+		new Ex05();
+	}
+
+}

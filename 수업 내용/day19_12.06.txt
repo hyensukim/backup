@@ -1,0 +1,73 @@
+12.06
+사용자 인터페이스
+(User Interface)
+1. 스윙
+
+2. 스윙의 클래스 구조
+
+3. 프레임 : JFrame
+ - 최종 컨테이너
+
+4. 패널 : JPanel
+ - 중간 컨테이너
+
+5.JLabel
+ - 텍스트를 단순히 출력
+
+6. JTextField
+ - 텍스트를 입력 받을때(한줄씩)
+
+7. TextArea
+ - 여러줄 텍스트를 입력받을때
+
+8. JPasswordField
+ - 비밀번호를 입력 받을때(**)
+ - setText : 입력 텍스트를 지정할 때
+ - getText : 입력 텍스트를 가져올 때
+
+9. 버튼
+ 1) JButton
+
+ 2) JCheckBox -> 중복선택
+
+ 3) JRadioButton -> 여러개중 하나만 선택
+
+ 4) ButtonGroup
+
+ 5) JComboBox
+
+10. 메뉴 - JMenuBar, JMenu
+
+14.스윙 레이안웃
+ - FlowLayout
+ - BoarderLayout
+ - GridLayout
+
+===============================================
+1. 이벤트와 이벤트 처리의 개념
+ - 이벤트 핸들러
+
+2. 이벤트의 종류
+ - 이벤트 클래스와 리스너 인터페이스
+
+1) Action Event - ActionListener
+ - getSource() : 이벤트가 발생한 요소 객체 주소.
+
+2) ChangeEevent - ChangeListener
+
+3) ItemEvent - ItemListener
+
+4) KeyEvent - keyListener
+
+5) ListSelectionEvent - ListSelectionListener
+
+6) MouseEvent - MouseListener
+
+7) MouseEvent - MouseMotionListener
+
+8) WindowEvent - WindowListener
+
+JOptionPane -> 팝업 
+ - 메세지 팝업
+ - 확인 기능
+ - 입력 기능

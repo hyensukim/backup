@@ -1,0 +1,19 @@
+package day19;
+
+import javax.swing.*;
+import java.awt.*;
+public class Ex04 extends JFrame{
+	public Ex04() {
+		super("예제04");
+		setSize(300,400);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		Stirng[] hobbies = {"수영","야구","축구","피아노","테니스"};
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package day19;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Ex02 extends JFrame{
+	
+	public Ex02() {
+		super("연습02");
+		setVisible(true);//창 보이기
+		setSize(300,400);//창 사이즈
+		
+		
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

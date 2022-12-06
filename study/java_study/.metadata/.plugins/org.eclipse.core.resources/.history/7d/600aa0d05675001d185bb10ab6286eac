@@ -1,0 +1,12 @@
+package day19;
+
+import javax.swing.*;
+import java.awt.*;
+public class Ex04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

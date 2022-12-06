@@ -33,3 +33,19 @@ Map Entry[] table
 5. Collections
  (java.util package)
  - Collection에 부가적인 유용한 기능을 제공
+
+-----------------------------------------------------
+사용자 인터페이스
+1. 스윙
+
+2. 스윙의 클래스 구조
+
+3. 프레임 : JFrame
+ - 최종 컨테이너
+
+ 4. 패널 : JPanel
+ - 중간 컨테이너
+
+5. JLabel
+
+6. JTextFeild

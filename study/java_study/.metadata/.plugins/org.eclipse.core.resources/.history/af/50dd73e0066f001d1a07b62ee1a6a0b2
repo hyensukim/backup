@@ -1,9 +1,0 @@
-package day13.sub01;
-
-public class Person {
-	private int age;
-	private String name;
-
-	
-}
-	

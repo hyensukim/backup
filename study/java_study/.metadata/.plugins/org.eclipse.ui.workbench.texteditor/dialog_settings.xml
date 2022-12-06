@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="parse("/>
+		<item key="selection" value="compareTo"/>
 		<list key="findhistory">
+			<item value="compareTo"/>
+			<item value="entry"/>
 			<item value="parse("/>
 			<item value="parse"/>
 			<item value="int value"/>

@@ -6,9 +6,9 @@ public class Ex01 extends JFrame{
 	
 	public Ex01() {
 		super("연습01");
-		setVisible(true);// ì°½ ì¤í
-		setSize(300,400);//ì°½ í½ì í¬ê¸° ì¤ì 
-		setDefaultCloseOperation(EXIT_ON_CLOSE);// ì°½ë«íë©´ ì¤í ì¢ë£
+		setVisible(true);//
+		setSize(300,400);//
+		setDefaultCloseOperation(EXIT_ON_CLOSE);// 
 		
 		setLayout(new FlowLayout());
 		for(int i = 0; i < 10; i++) {
